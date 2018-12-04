@@ -1,8 +1,13 @@
 <?php
 function register_widget_areas() {
     register_sidebar(array(
-        'name' => 'Right Side-bar',
-        'id' => 'right-side-bar'
+        'id' => 'right-side-bar',
+        'name' => 'Right Side bar',
+        'before_widget' => '<div class="card">',
+        'after_widget' => "\n</div>\n</div>",
+        'before_title' => '<h5 class="card-header">',
+        'after_title' => "</h5>\n<div class='card-body'>",
+
     ));
 }
 

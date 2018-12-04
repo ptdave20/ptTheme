@@ -24,11 +24,11 @@ Tags: bootstrap fontawesome
         <?php next_posts_link( 'Older posts' ); ?>
         <?php previous_posts_link( 'Newer posts' ); ?>
     </div>
-    <div>
-        <?php if ( is_active_sidebar( 'right-side-bar' ) ) : ?>
-            <?php dynamic_sidebar( 'right-side-bar' ); ?>
-        <?php endif; ?>
+    <?php if ( is_active_sidebar( 'right-side-bar' ) ) : ?>
+    <div class="col-md-2">
+        <?php dynamic_sidebar('right-side-bar'); ?>
     </div>
+    <?php endif; ?>
 </div>
 
 <?php get_footer(); ?>

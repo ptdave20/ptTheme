@@ -2,7 +2,7 @@
 
 
 
-<div class="my-2 mx-2 row">
+<div class="my-2 row">
     <div class="col">
 
         <?php 
